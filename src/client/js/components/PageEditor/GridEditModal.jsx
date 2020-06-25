@@ -58,6 +58,18 @@ export default class GridEditModal extends React.PureComponent {
                 <div className="device-container"></div>
               </div>
               <div className="row col-9 flex-nowrap overflow-auto">{this.showBgCols()}</div>
+            <div id="editable-cols" className="row">
+              <div className="col-3">
+                <div className="device-titile-bar"></div>
+                <div className="device-container"></div>
+                <div className="device-titile-bar"></div>
+                <div className="device-container"></div>
+                <div className="device-titile-bar"></div>
+                <div className="device-container"></div>
+                <div className="device-titile-bar"></div>
+                <div className="device-container"></div>
+              </div>
+              <div className="row col-9 flex-nowrap overflow-auto grid-container">{this.showBgCols()}</div>
             </div>
           </div>
         </ModalBody>
