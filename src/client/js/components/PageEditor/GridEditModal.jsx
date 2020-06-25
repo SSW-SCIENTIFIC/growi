@@ -38,6 +38,14 @@ export default class GridEditModal extends React.PureComponent {
     return cols;
   }
 
+  showEditableCols() {
+    const cols = [];
+    for (let i = 0; i < 12; i++) {
+      cols.push(<div className="bg-info mx-1 grid-bg-col"></div>);
+    }
+    return cols;
+  }
+
   render() {
     return (
       <Modal isOpen={this.state.show} toggle={this.cancel} size="xl">
@@ -69,8 +77,9 @@ export default class GridEditModal extends React.PureComponent {
                 <div className="device-titile-bar"></div>
                 <div className="device-container"></div>
               </div>
-              <div className="row col-9 flex-nowrap overflow-auto grid-container">{this.showBgCols()}</div>
+              <div className="row col-9 flex-nowrap overflow-auto grid-container">{this.showEditableCols()}</div>
             </div>
+
           </div>
         </ModalBody>
         <ModalFooter className="grw-modal-footer">
