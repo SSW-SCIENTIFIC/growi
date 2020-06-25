@@ -54,7 +54,7 @@ export default class GridEditModal extends React.PureComponent {
         </ModalHeader>
         <ModalBody>
           <div className="container">
-            <div className="row">
+            <div id="bg-cols" className="row">
               <div className="col-3">
                 <div className="device-titile-bar">Phone</div>
                 <div className="device-container"></div>
