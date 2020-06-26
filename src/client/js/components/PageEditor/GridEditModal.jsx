@@ -79,7 +79,7 @@ export default class GridEditModal extends React.PureComponent {
               </div>
               <div className="row col-9 flex-nowrap overflow-auto grid-container">{this.showEditableCols()}</div>
             </div>
-
+            </div>
           </div>
         </ModalBody>
         <ModalFooter className="grw-modal-footer">
