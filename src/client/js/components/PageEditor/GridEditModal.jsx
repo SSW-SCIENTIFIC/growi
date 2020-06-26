@@ -41,7 +41,7 @@ export default class GridEditModal extends React.PureComponent {
   showEditableCols() {
     const cols = [];
     for (let i = 0; i < 12; i++) {
-      cols.push(<div className="bg-info mx-1 grid-bg-col"></div>);
+      cols.push(<div className="bg-info mx-1 grid-editable-col"></div>);
     }
     return cols;
   }
